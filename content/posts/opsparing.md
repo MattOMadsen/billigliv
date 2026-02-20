@@ -3,7 +3,8 @@ title: "Sådan sparer du 50.000 kr på 3 år – Realistisk opsparing i 2026"
 date: 2026-02-20T12:00:00+01:00
 description: "Ærlig og praktisk guide til opsparing i 2026. Spar tusindvis af kroner uden at leve som en munk – konkrete trin, bedste renter og automatisk opsparing til almindelige danskere i Midtjylland."
 slug: "opsparing"
-cover: "/images/opsparing-featured-sparegris-danske-kroner-2026.webp"
+cover:
+  image: "/images/opsparing-featured-sparegris-danske-kroner-2026.webp"
 url: "/opsparing/"
 draft: false
 tags: ["opsparing", "sparetips", "budget", "penge", "2026", "midtjylland"]

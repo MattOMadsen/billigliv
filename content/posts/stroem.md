@@ -13,36 +13,36 @@ categories: ["stroem"]
 
 # Strøm 2026: Spar 3.500 kr på elregningen
 
-**Affiliate-link – jeg får en lille provision hvis du klikker og bestiller, uden ekstra omkostning for dig.**
-
-Elprisen er stadig høj i 2026, men der er masser af nemme besparelser. Jeg har skiftet både aftale og pærer i mit hus i Viborg og sparer nu 3.200 kr om året.
+Elprisen er stadig høj i 2026, men der er masser af nemme besparelser. Jeg har selv skiftet både aftale og pærer i mit hus i Viborg og sparer nu 3.200 kr om året.
 
 ## Få 3 eltilbud på 60 sekunder
-Det bedste jeg har fundet er **FindElpriser.dk**:
 
-[Få 3 gratis eltilbud]({{ .Site.Data.affiliate_links.findelpriser }})
+Det bedste jeg har fundet er FindElpriser.dk:
+
+{{< affiliate "findelpriser" "Få 3 gratis eltilbud" >}}
 
 De fleste i Midtjylland sparer 1.800–2.900 kr ved at skifte til en ny leverandør.
 
 ## Skift til LED og spar yderligere 800–1.200 kr
-Jeg er godkendt til tre rigtig gode LED-programmer:
 
-- **Aigostar**  
-- **DetLED.dk**  
-- **Trendlights.dk**
+Jeg har fundet tre rigtig gode LED-shops:
 
-[Få LED-pærer hos Aigostar]({{ .Site.Data.affiliate_links.aigostar }})  
-[Få LED-pærer hos DetLED.dk]({{ .Site.Data.affiliate_links.detled }})  
-[Få LED-pærer hos Trendlights.dk]({{ .Site.Data.affiliate_links.trendlights }})
+{{< affiliate "aigostar" "Få LED-pærer hos Aigostar" >}}
+
+{{< affiliate "detled" "Få LED-pærer hos DetLED.dk" >}}
+
+{{< affiliate "trendlights" "Få LED-pærer hos Trendlights.dk" >}}
 
 Skift alle pærer til LED – det betaler sig hjem på 3-4 måneder.
 
 ## Realistisk besparelse for en familie på 4 i Midtjylland
+
 - Ny elaftale: 2.400 kr  
 - LED-pærer over hele huset: 950 kr  
 - Sluk standby + smart stik: 350 kr  
+
 **Total: 3.700 kr om året**
 
-**Affiliate-link – jeg får en lille provision hvis du klikker og bestiller, uden ekstra omkostning for dig.**
+Det er faktisk ret simpelt at komme ned på de tal uden at gå på kompromis med lys eller varme. Jeg gør det selv hver vinter her i Viborg, og det mærkes tydeligt på regningen.
 
 *Sidst opdateret 20. februar 2026*

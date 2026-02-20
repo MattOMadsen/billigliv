@@ -21,7 +21,7 @@ De fleste danske familier betaler stadig for meget for hus-, bil- og indboforsik
 
 Det er faktisk ret enkelt. Jeg bruger selv disse to:
 
-[Få 3 gratis tilbud]({{ .Site.Data.affiliate_links.cover_forsikring }})
+[Få 3 gratis tilbud]({{ .Site.data.affiliate_links.cover_forsikring }})
 
 [Få 3 gratis tilbud]({{ .Site.Data.affiliate_links.findforsikring }})
 

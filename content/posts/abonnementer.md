@@ -3,7 +3,8 @@ title: "Abonnementer 2026: Stop de skjulte månedlige træk og spar 4.000 kr om 
 date: 2026-02-20T16:00:00+01:00
 description: "Ærlig gennemgang af alle dine abonnementer i 2026. Sådan finder du og stopper de 8-12 skjulte træk på Netflix, Spotify, fitness, cloud, mobil og meget mere – med konkrete besparelser til danske familier."
 slug: "abonnementer"
-cover: "/images/abonnementer-featured-stop-spild-kroner-2026.webp"
+cover:
+  image: "/images/abonnementer-featured-stop-spild-kroner-2026.webp"
 url: "/abonnementer/"
 draft: false
 tags: ["abonnementer", "sparetips", "streaming", "mobil", "fitness", "2026"]

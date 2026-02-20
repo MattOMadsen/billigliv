@@ -24,7 +24,17 @@ jobs:
         run: pip install xmltodict requests
 
       - name: Hent nyeste godkendte programmer fra Partner-Ads
-        run: curl -s -o programs.xml "https://www.partner-ads.com/dk/programoversigt_xml.php?key=${{ secrets.PARTNER_ADS_KEY }}&godkendte=1"
+        run: |
+          for i in {1..5}; do
+            curl -s -o programs.xml "https://www.partner-ads.com/dk/programoversigt_xml.php?key=${{ secrets.PARTNER_ADS_KEY }}&godkendte=1"
+            if grep -q "Data should not be retrieved so frequently" programs.xml; then
+              echo "Rate limit – venter 60 sekunder... (forsøg $i/5)"
+              sleep 60
+            else
+              echo "✅ XML hentet succesfuldt"
+              break
+            fi
+          done
 
       - name: Generér artikel + billeder + PR
         env:

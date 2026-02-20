@@ -90,4 +90,5 @@ En god madplan er ikke en fængselsmenu. Det er et system der giver dig mere tid
 
 Start i morgen med denne uges indkøb. Om fire uger har du sparet 2.000–3.000 kr – og du vil aldrig gå tilbage til “hvad skal vi have i aften?”-kaos.
 
+{{< affiliate-disclaimer >}}
 *Sidst opdateret 20. februar 2026*

@@ -5,7 +5,6 @@ on:
     - cron: '0 8 * * 1,4'   # Mandag + torsdag kl. 9:00 dansk tid (8:00 UTC)
   workflow_dispatch:        # Kan køres manuelt til test
 
-# <-- NYT: giver botten lov til at pushe og lave PR
 permissions:
   contents: write
   pull-requests: write
@@ -28,18 +27,35 @@ jobs:
       - name: Install dependencies
         run: pip install xmltodict requests
 
-      - name: Hent nyeste godkendte programmer fra Partner-Ads
+      - name: Hent nyeste godkendte programmer fra Partner-Ads (stærk retry)
         run: |
-          for i in {1..5}; do
+          echo "Forsøger at hente XML fra Partner-Ads..."
+          rm -f programs.xml
+          
+          for i in {1..8}; do
             curl -s -o programs.xml "https://www.partner-ads.com/dk/programoversigt_xml.php?key=${{ secrets.PARTNER_ADS_KEY }}&godkendte=1"
-            if grep -q "Data should not be retrieved so frequently" programs.xml; then
-              echo "Rate limit – venter 60 sekunder... (forsøg $i/5)"
-              sleep 60
-            else
-              echo "✅ XML hentet succesfuldt"
+            
+            if [ -s programs.xml ] && grep -q "<?xml" programs.xml; then
+              echo "✅ XML hentet succesfuldt på forsøg $i"
               break
+            elif grep -q "Data should not be retrieved so frequently" programs.xml; then
+              echo "Rate limit på forsøg $i - venter 75 sekunder..."
+              sleep 75
+            else
+              echo "Ukendt fejl på forsøg $i - venter 45 sekunder..."
+              sleep 45
             fi
           done
+
+          # Sidste sikkerhedstjek
+          if [ ! -s programs.xml ] || ! grep -q "<?xml" programs.xml; then
+            echo "FEJL: Kunne ikke hente XML efter 8 forsøg"
+            cat programs.xml
+            exit 1
+          fi
+
+          echo "XML størrelse: $(wc -c < programs.xml) bytes"
+          head -c 300 programs.xml | cat
 
       - name: Generér artikel + billeder + PR
         env:

@@ -19,7 +19,7 @@ De fleste danske familier betaler stadig for meget for hus-, bil- og indboforsik
 
 ## Sådan får du 3 tilbud på 2 minutter
 
-Det er faktisk ret enkelt. Jeg bruger selv disse to:
+Det er faktisk ret enkelt:
 
 [Få 3 gratis tilbud]({{ .Site.Data.affiliate_links.cover_forsikring | safeURL }})
 

@@ -3,7 +3,7 @@ title: "Spar 5.000 kr om året på forsikringer i 2026 - Sådan får du den bill
 date: 2026-02-20T14:00:00+01:00
 description: "Ærlig guide til billigere forsikringer i 2026. Sammenligning af priser på hus, bil, indbo og rejseforsikring - med konkrete besparelser til danske familier i Midtjylland."
 slug: "forsikring"
-image: "/images/forsikring-featured-hus-bil-paraply-kroner-2026.webp"
+cover: "/images/forsikring-featured-hus-bil-paraply-kroner-2026.webp"
 url: "/forsikring/"
 draft: false
 tags: ["forsikring", "sparetips", "husforsikring", "bilforsikring", "2026", "midtjylland"]
@@ -18,7 +18,6 @@ De fleste danskere betaler for meget for forsikringer – ofte 4.000–8.000 kr 
 Jeg har gennemgået priserne fra alle store selskaber i februar 2026, og her er den realistiske vej til at spare 4.000–6.000 kr årligt uden at sætte dækningen ned.
 
 ## Hvorfor du betaler for meget lige nu
-
 - Du har aldrig sammenlignet siden du flyttede ind
 - Du har automatisk fornyelse med 5–10 % prisstigning hvert år
 - Du har unødvendige tillæg (f.eks. glasforsikring på en lejebolig)
@@ -39,7 +38,6 @@ Jeg har gennemgået priserne fra alle store selskaber i februar 2026, og her er 
 **Affiliate-link – jeg får en lille provision hvis du klikker og skifter, uden ekstra omkostning for dig.**
 
 ## 6 konkrete trin til at spare 5.000 kr i år
-
 1. Saml alle forsikringer ét sted (ofte 15–25 % rabat)
 2. Hæv selvrisiko fra 0 til 2.000–4.000 kr (giver 20–40 % rabat)
 3. Fjern unødvendige tillæg (glas, cykel, el-skade på lejebolig)
@@ -67,9 +65,5 @@ Nej – de fleste skader er under 5.000 kr. Du sparer mere på præmien end du n
 Forsikringer behøver ikke være dyrt. Med 30 minutters arbejde én gang om året kan du spare 4.000–6.000 kr – penge du hellere vil bruge på ferie, ny sofa eller ekstra opsparing.
 
 Start i dag: Gå ind på Topdanmark eller GF Forsikring via linket ovenfor og få et uforpligtende tilbud. Du vil blive overrasket over hvor meget du kan spare.
-
-Næste artikel kommer snart: “Strøm – Spar 3.500 kr på elregningen i 2026”.
-
-God sparing! 🏠💰
 
 *Sidst opdateret 20. februar 2026*

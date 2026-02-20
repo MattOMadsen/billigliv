@@ -15,12 +15,11 @@ categories: ["forsikring"]
 
 **Affiliate-link – jeg får en lille provision hvis du klikker og får tilbud, uden ekstra omkostning for dig.**
 
-De fleste danske familier betaler stadig for meget for hus-, bil- og indboforsikring. Jeg har selv skiftet i 2025 og sparet 3.800 kr på ét år.
-
-I Midtjylland er forskellen ofte endnu større.
+De fleste danske familier betaler stadig for meget for hus-, bil- og indboforsikring. Jeg har selv skiftet i 2025 og sparet 3.800 kr på ét år. I Midtjylland er forskellen ofte endnu større.
 
 ## Sådan får du 3 tilbud på 2 minutter
-Det bedste jeg har fundet er to programmer der virker rigtig godt:
+
+Det er faktisk ret enkelt. Jeg bruger selv disse to:
 
 [Få 3 gratis tilbud]({{ .Site.Data.affiliate_links.cover_forsikring }})
 
@@ -28,7 +27,7 @@ Det bedste jeg har fundet er to programmer der virker rigtig godt:
 
 Du udfylder bare én formular og får tilbud fra flere selskaber. De fleste sparer 2.200–4.800 kr om året.
 
-## Mine konkrete besparelser i 2026 (eksempel fra en familie i Silkeborg)
+## Sådan kan besparelsen se ud for en familie på 4 i Silkeborg
 | Forsikringstype     | Gammel pris/år | Ny pris/år | Besparelse |
 |---------------------|----------------|------------|------------|
 | Husforsikring       | 4.900 kr       | 3.100 kr   | 1.800 kr   |

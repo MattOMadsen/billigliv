@@ -45,4 +45,5 @@ Skift alle pærer til LED – det betaler sig hjem på 3-4 måneder.
 
 Det er faktisk ret simpelt at komme ned på de tal uden at gå på kompromis med lys eller varme. Jeg gør det selv hver vinter her i Viborg, og det mærkes tydeligt på regningen.
 
+{{< affiliate-disclaimer >}}
 *Sidst opdateret 20. februar 2026*

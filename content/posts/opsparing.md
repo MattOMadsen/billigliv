@@ -77,4 +77,5 @@ Opsparing handler ikke om at være perfekt. Det handler om at have et system der
 
 Start i dag med at oprette en opsparingskonto og sæt den første automatiske overførsel op. Om 3 år har du 50.000 kr mere – og det føles fantastisk.
 
+{{< affiliate-disclaimer >}}
 *Sidst opdateret 20. februar 2026*

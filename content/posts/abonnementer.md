@@ -69,4 +69,5 @@ Ja, det kan du sagtens – Discovery+ eller Viaplay Sport alene er ofte nok.
 **Konklusion**  
 Abonnementer er en af de absolut nemmeste måder at få 3.000–5.000 kr ekstra om året på, uden at du går glip af noget, du faktisk bruger. Gå ind i din netbank lige nu – jeg garanterer, du finder mindst to-tre ting, du kan skære væk allerede i dag.
 
+{{< affiliate-disclaimer >}}
 *Sidst opdateret 20. februar 2026*

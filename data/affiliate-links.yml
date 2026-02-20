@@ -1,9 +1,9 @@
 # BilligLiv.dk - Affiliate links fra Partner-Ads
-# Opdater kun denne fil når du får nye tracking-links
+# Opdater KUN denne fil når du får nye tracking-links
 
 # Forsikring
 cover_forsikring: "https://www.partner-ads.com/dk/klikbanner.php?partnerid=56256&bannerid=110013"
-findforsikring: https://www.partner-ads.com/dk/klikbanner.php?partnerid=56256&bannerid=60068"
+findforsikring: "https://www.partner-ads.com/dk/klikbanner.php?partnerid=56256&bannerid=60068"
 
 # Strøm & LED
 findelpriser: "https://www.partner-ads.com/dk/klikbanner.php?partnerid=56256&bannerid=112206"
@@ -19,6 +19,4 @@ kontoservice: "https://www.partner-ads.com/dk/klikbanner.php?partnerid=56256&ban
 pantsat: "https://www.partner-ads.com/dk/klikbanner.php?partnerid=56256&bannerid=78126"
 
 # Mobil
-GreenDK "https://www.partner-ads.com/dk/klikbanner.php?partnerid=56256&bannerid=109463"
-
-
+greendk: "https://www.partner-ads.com/dk/klikbanner.php?partnerid=56256&bannerid=109463"

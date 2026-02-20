@@ -5,6 +5,11 @@ on:
     - cron: '0 8 * * 1,4'   # Mandag + torsdag kl. 9:00 dansk tid (8:00 UTC)
   workflow_dispatch:        # Kan køres manuelt til test
 
+# <-- NYT: giver botten lov til at pushe og lave PR
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   generate:
     runs-on: ubuntu-latest

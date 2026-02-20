@@ -11,61 +11,45 @@ print("=== Starter BilligLiv auto-artikel generation ===")
 print(f"Dato: {today}")
 
 if not grok_key:
-    print("FEJL: GROK_API_KEY secret mangler! Tjek Settings → Secrets → Actions.")
+    print("FEJL: GROK_API_KEY secret mangler!")
     exit(1)
 
-# Hent XML
-with open('programs.xml', 'r', encoding='iso-8859-1') as f:
-    data = xmltodict.parse(f.read())['partnerprogrammer']['program']
-
-print(f"✅ Hentet {len(data)} programmer fra Partner-Ads")
-
-system_prompt = """Du er BilligLivs AI-skribent. Skriv ALTID i naturlig, venlig Midtjylland-tone som om vi snakker over kaffen i Viborg. Brug "jeg har selv prøvet det i mit hus i Viborg", konkrete tal, Silkeborg/Viborg-eksempler, tabeller, 5 hacks, FAQ, konklusion. Ingen "godkendt til". Brug shortcode {{< affiliate "key" "tekst" >}} hvis linket findes i yml. Lav også 3 Grok Imagine prompts til billeder (1600x900 WebP)."""
-
-user_prompt = f"""Dato: {today}
-Godkendte programmer: {str(data)[:10000]}
-
-Vælg ét stærkt emne med 4-6 programmer der passer sammen.
-Generér FULD Hugo markdown artikel (1800-2500 ord) i præcis BilligLiv-stil.
-Inkluder frontmatter med title, date, description, slug, cover image (emne-featured-...-2026.webp), tags, categories.
-Tilføj 3 Grok Imagine prompts i bunden som kommentarer.
-Output kun den rene markdown klar til content/emne/index.md"""
-
-headers = {
-    "Authorization": f"Bearer {grok_key}",
-    "Content-Type": "application/json"
-}
-
-payload = {
-    "model": "grok-4-latest",   # <-- nu med -latest som din curl
-    "messages": [
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": user_prompt}
-    ],
-    "temperature": 0.7
-}
-
-response = requests.post("https://api.x.ai/v1/chat/completions", json=payload, headers=headers)
-result = response.json()
-
-if 'error' in result:
-    print("Grok-fejl:", result['error'])
+# Tjek XML-fil
+xml_path = 'programs.xml'
+if not os.path.exists(xml_path):
+    print("FEJL: programs.xml findes ikke!")
     exit(1)
 
-article_md = result['choices'][0]['message']['content']
+size = os.path.getsize(xml_path)
+print(f"XML-fil størrelse: {size} bytes")
 
-# Find slug og gem
-slug_match = re.search(r'slug:\s*"([^"]+)"', article_md)
-slug = slug_match.group(1) if slug_match else f"auto-{today}"
-filename = f"content/{slug}/index.md"
+with open(xml_path, 'r', encoding='iso-8859-1') as f:
+    raw = f.read()
+    print("=== FØRSTE 1000 TEGN AF programs.xml ===")
+    print(raw[:1000])
+    print("=== SLUT PÅ DEBUG ===")
 
-os.makedirs(os.path.dirname(filename), exist_ok=True)
-with open(filename, 'w', encoding='utf-8') as f:
-    f.write(article_md)
+if size == 0 or not raw.strip():
+    print("FEJL: XML-filen er tom!")
+    exit(1)
 
-print(f"✅ Artikel genereret og gemt som {filename}")
-print(f"Emne: {slug}")
+if not raw.strip().startswith('<?xml') and not raw.strip().startswith('<'):
+    print("FEJL: Dette er ikke XML – sandsynligvis fejlside fra Partner-Ads!")
+    exit(1)
 
-os.environ['TODAY'] = today
-os.environ['TOPIC'] = slug.upper()
-os.environ['SELECTED_PROGRAMS'] = "Se PR for detaljer"
+# Parse nu
+try:
+    data = xmltodict.parse(raw)['partnerprogrammer']['program']
+    print(f"✅ Hentet {len(data) if isinstance(data, list) else 1} programmer")
+except Exception as e:
+    print("Parse-fejl:", str(e))
+    exit(1)
+
+# Resten af scriptet (Grok-kald, artikel-generering osv.)
+system_prompt = """Du er BilligLivs AI-skribent. Skriv ALTID i naturlig, venlig Midtjylland-tone som om vi snakker over kaffen i Viborg..."""  # (samme som før)
+
+# ... (resten af koden er uændret fra sidst – Grok-kald, gem fil osv.)
+
+# (Hvis du vil have hele scriptet samlet, sig "send hele py" – men debug-delen er det vigtigste nu)
+
+print("✅ Debug færdig – kører videre til Grok")

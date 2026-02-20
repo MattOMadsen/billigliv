@@ -21,9 +21,9 @@ De fleste danske familier betaler stadig for meget for hus-, bil- og indboforsik
 
 Det er faktisk ret enkelt. Jeg bruger selv disse to:
 
-[Få 3 gratis tilbud]({{ .Site.data.affiliate_links.cover_forsikring }})
+[Få 3 gratis tilbud]({{ .Site.Data.affiliate_links.cover_forsikring | safeURL }})
 
-[Få 3 gratis tilbud]({{ .Site.Data.affiliate_links.findforsikring }})
+[Få 3 gratis tilbud]({{ .Site.Data.affiliate_links.findforsikring | safeURL }})
 
 Du udfylder bare én formular og får tilbud fra flere selskaber. De fleste sparer 2.200–4.800 kr om året.
 

@@ -3,7 +3,8 @@ title: "Madplan 2026: Spar 10.000 kr på mad til en familie på 4 – Rema, Nett
 date: 2026-02-20T13:00:00+01:00
 description: "Ugentlig madplan der virker i virkeligheden. Spar tusindvis på madbudgettet med danske supermarkeder, billige opskrifter og realistiske indkøbslister til Midtjylland i 2026."
 slug: "madplan"
-image: "/images/madplan-featured-indkobs-kurv-danske-varer-2026.webp"
+cover: "/images/madplan-featured-indkobs-kurv-danske-varer-2026.webp"
+url: "/madplan/"
 draft: false
 tags: ["madplan", "sparetips", "billig mad", "rema", "netto", "familiebudget", "2026"]
 categories: ["madplan"]
@@ -14,12 +15,11 @@ categories: ["madplan"]
 **Affiliate-link – jeg får en lille provision hvis du klikker og handler, uden ekstra omkostning for dig.**
 
 En gennemsnitlig dansk familie på 4 bruger 42.000–55.000 kr om året på mad.  
-Med denne madplan kan du skære det ned til 32.000–38.000 kr – **uden at spise havregrød hver dag**.
+Med denne madplan kan du skære det ned til 32.000–38.000 kr – **uden at spise havregrød hver dag**.  
 
 Jeg har selv testet den her i Midtjylland i januar 2026 med Rema 1000 og Netto. Resultatet: **8.200 kr sparet på 2 måneder**.
 
 ## Hvorfor de fleste madplaner fejler
-
 De er for perfekte. De kræver 47 forskellige ingredienser og 2 timer om dagen i køkkenet.  
 Denne madplan er lavet til rigtige mennesker:  
 - Max 30 minutter tilberedning  
@@ -68,7 +68,6 @@ Denne madplan er lavet til rigtige mennesker:
 **Affiliate-link – jeg får en lille provision hvis du klikker og handler, uden ekstra omkostning for dig.**
 
 ## 7 konkrete tricks der sparer 5.000 kr ekstra om året
-
 1. Køb aldrig færdiglavet sauce – lav selv på 2 minutter  
 2. Brug “Gul streg”-varer i Rema (ofte 50-70 % rabat)  
 3. Lav dobbelt portion og frys ned  
@@ -97,9 +96,5 @@ Ja – masser af grønt, protein og fuldkorn. Ingen “kun nudler”-uge.
 En god madplan er ikke en fængselsmenu. Det er et system der giver dig mere tid, mindre stress og flere penge til det der betyder noget.
 
 Start i morgen med at lave denne uges indkøb. Om 4 uger har du sparet 2.000–3.000 kr – og du vil aldrig gå tilbage til “hvad skal vi have i aften?”-kaos.
-
-Vil du have næste uges madplan automatisk hver søndag? Når Partner-Ads er godkendt og automatiseringen er oppe, sender jeg den direkte til din mail eller som ny artikel.
-
-God appetit og god sparing! 🍝💰
 
 *Sidst opdateret 20. februar 2026*

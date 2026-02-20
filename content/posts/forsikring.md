@@ -3,7 +3,8 @@ title: "Spar 5.000 kr om året på forsikringer i 2026 - Sådan får du den bill
 date: 2026-02-20T14:00:00+01:00
 description: "Ærlig guide til billigere forsikringer i 2026. Sammenligning af priser på hus, bil, indbo og rejseforsikring - med konkrete besparelser til danske familier i Midtjylland."
 slug: "forsikring"
-cover: "/images/forsikring-featured-hus-bil-paraply-kroner-2026.webp"
+cover:
+  image: "/images/forsikring-featured-hus-bil-paraply-kroner-2026.webp"
 url: "/forsikring/"
 draft: false
 tags: ["forsikring", "sparetips", "husforsikring", "bilforsikring", "2026", "midtjylland"]

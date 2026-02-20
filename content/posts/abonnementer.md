@@ -3,13 +3,13 @@ title: "Abonnementer 2026: Stop de skjulte månedlige træk og spar 4.000 kr om 
 date: 2026-02-20T16:00:00+01:00
 description: "Ærlig gennemgang af alle dine abonnementer i 2026. Sådan finder du og stopper de 8-12 skjulte træk på Netflix, Spotify, fitness, cloud, mobil og meget mere – med konkrete besparelser til danske familier."
 slug: "abonnementer"
-image: "/images/abonnementer-featured-stop-spild-kroner-2026.webp"
+cover: "/images/abonnementer-featured-stop-spild-kroner-2026.webp"
 url: "/abonnementer/"
 draft: false
 tags: ["abonnementer", "sparetips", "streaming", "mobil", "fitness", "2026"]
 categories: ["abonnementer"]
 ---
-0
+
 # Abonnementer 2026: Stop de skjulte månedlige træk og spar 4.000 kr om året
 
 **Affiliate-link – jeg får en lille provision hvis du klikker og opsiger, uden ekstra omkostning for dig.**
@@ -80,3 +80,5 @@ Ja – Discovery+ eller Viaplay Sport alene er ofte nok.
 Abonnementer er den nemmeste måde at spare 3.000–5.000 kr om året på – uden at gå på kompromis med noget du faktisk bruger.
 
 Gå ind i din netbank lige nu og find de første 2–3 du kan opsige. Om 30 dage har du 700–1.000 kr ekstra på kontoen.
+
+*Sidst opdateret 20. februar 2026*

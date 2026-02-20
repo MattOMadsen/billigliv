@@ -1,9 +1,9 @@
 ---
-title: "Strom 2026: Spar 3.500 kr paa elregningen - Bedste aftaler, sparepaerer og solceller til danske hjem"
+title: "Strøm 2026: Spar 3.500 kr på elregningen – Bedste aftaler, sparepærer og solceller til danske hjem"
 date: 2026-02-20T15:00:00+01:00
-description: "Realistisk guide til billigere strom i 2026. Sammenligning af elpriser, bedste leverandoerer, LED-paerer, varmepumper og solceller - med konkrete besparelser til familier i Midtjylland."
+description: "Realistisk guide til billigere strøm i 2026. Sammenligning af elpriser, bedste leverandører, LED-pærer, varmepumper og solceller - med konkrete besparelser til familier i Midtjylland."
 slug: "stroem"
-image: "/images/stroem-featured-sparepaere-vindmoeller-2026.webp"
+cover: "/images/stroem-featured-sparepaere-vindmoeller-2026.webp"
 url: "/stroem/"
 draft: false
 tags: ["strom", "elregning", "sparetips", "varmepumpe", "solceller", "2026", "midtjylland"]
@@ -33,7 +33,6 @@ Jeg har tjekket alle priser i februar 2026, og her er den praktiske plan der vir
 **Affiliate-link – jeg får en lille provision hvis du klikker og skifter, uden ekstra omkostning for dig.**
 
 ## 8 konkrete sparetrin der virker i 2026
-
 1. Skift til fastpris-aftale (undgå spotpriser når det er koldt)
 2. Skift alle pærer til LED (sparer 800–1.200 kr om året)
 3. Sænk stuetemperaturen 1 grad (sparer ca. 500 kr)
@@ -63,9 +62,5 @@ Lad om natten på billig tarif – sparer 4.000–6.000 kr om året på opladnin
 Strømregningen behøver ikke være en fast udgift. Med 30 minutters arbejde kan du spare 2.500–4.000 kr allerede i år – og meget mere hvis du investerer lidt i varmepumpe eller solceller.
 
 Start i dag med at skifte til en fastpris-aftale via linket ovenfor. Om 12 måneder har du tusindvis af kroner ekstra på kontoen.
-
-Næste artikel: Abonnementer – hvordan du stopper de skjulte månedlige træk.
-
-God sparing og god energi! ⚡💰
 
 *Sidst opdateret 20. februar 2026*

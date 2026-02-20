@@ -7,7 +7,7 @@ cover:
   image: "/images/forsikring-featured-hus-bil-paraply-kroner-2026.webp"
 url: "/forsikring/"
 draft: false
-tags: ["forsikring", "coverforsikring", "findforsikring", "sparetips", "2026", "midtjylland"]
+tags: ["forsikring", "sparetips", "2026", "midtjylland"]
 categories: ["forsikring"]
 ---
 
@@ -17,16 +17,17 @@ categories: ["forsikring"]
 
 De fleste danske familier betaler stadig for meget for hus-, bil- og indboforsikring. Jeg har selv skiftet i 2025 og sparet 3.800 kr på ét år.
 
-I Midtjylland er forskellen ofte endnu større, fordi mange har gamle aftaler fra 10-15 år tilbage.
+I Midtjylland er forskellen ofte endnu større.
 
 ## Sådan får du 3 tilbud på 2 minutter
-Jeg bruger selv to programmer jeg er godkendt til:
+Jeg anbefaler to programmer jeg er godkendt til:
 
-- **Cover Forsikring** – 275 kr i lead-belønning til mig  
-- **Findforsikring.dk** – 60 kr pr. lead
+- **Cover Forsikring**  
+- **Findforsikring.dk**
 
-**[https://www.partner-ads.com/dk/klikbanner.php?partnerid=56256&bannerid=110013]**  
-**[https://www.partner-ads.com/dk/klikbanner.php?partnerid=56256&bannerid=60068]**
+[Få 3 gratis tilbud fra Cover Forsikring]({{ .Site.Data.affiliate_links.cover_forsikring }})
+
+[Få 3 gratis tilbud fra Findforsikring.dk]({{ .Site.Data.affiliate_links.findforsikring }})
 
 Du udfylder bare én formular og får tilbud fra flere selskaber. De fleste sparer 2.200–4.800 kr om året.
 
@@ -46,5 +47,3 @@ Du udfylder bare én formular og får tilbud fra flere selskaber. De fleste spar
 3. Tjek hvert år i januar – priserne ændrer sig meget.
 
 *Sidst opdateret 20. februar 2026*
-
----

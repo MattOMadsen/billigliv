@@ -7,15 +7,18 @@ import re
 today = datetime.now().strftime('%Y-%m-%d')
 grok_key = os.getenv('GROK_API_KEY')
 
+print("=== Starter BilligLiv auto-artikel generation ===")
+print(f"Dato: {today}")
+
 if not grok_key:
-    print("FEJL: GROK_API_KEY secret mangler!")
+    print("FEJL: GROK_API_KEY secret mangler! Tjek Settings → Secrets → Actions.")
     exit(1)
 
-# Hent XML (oprettet i forrige trin)
+# Hent XML
 with open('programs.xml', 'r', encoding='iso-8859-1') as f:
     data = xmltodict.parse(f.read())['partnerprogrammer']['program']
 
-print(f"Hentet {len(data)} programmer fra Partner-Ads")
+print(f"✅ Hentet {len(data)} programmer fra Partner-Ads")
 
 system_prompt = """Du er BilligLivs AI-skribent. Skriv ALTID i naturlig, venlig Midtjylland-tone som om vi snakker over kaffen i Viborg. Brug "jeg har selv prøvet det i mit hus i Viborg", konkrete tal, Silkeborg/Viborg-eksempler, tabeller, 5 hacks, FAQ, konklusion. Ingen "godkendt til". Brug shortcode {{< affiliate "key" "tekst" >}} hvis linket findes i yml. Lav også 3 Grok Imagine prompts til billeder (1600x900 WebP)."""
 
@@ -34,7 +37,7 @@ headers = {
 }
 
 payload = {
-    "model": "grok-2",
+    "model": "grok-4-latest",   # <-- nu med -latest som din curl
     "messages": [
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": user_prompt}
@@ -63,7 +66,6 @@ with open(filename, 'w', encoding='utf-8') as f:
 print(f"✅ Artikel genereret og gemt som {filename}")
 print(f"Emne: {slug}")
 
-# Sæt env til PR
 os.environ['TODAY'] = today
 os.environ['TOPIC'] = slug.upper()
 os.environ['SELECTED_PROGRAMS'] = "Se PR for detaljer"

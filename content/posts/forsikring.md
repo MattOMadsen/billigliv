@@ -1,7 +1,7 @@
 ---
 title: "Spar 5.000 kr om året på forsikringer i 2026 - Sådan får du den billigste og bedste dækning"
 date: 2026-02-20T14:00:00+01:00
-description: "Ærlig guide til billigere forsikringer i 2026 med Cover Forsikring og Findforsikring.dk – konkrete besparelser til familier i Midtjylland."
+description: "Ærlig guide til billigere forsikringer i 2026 – konkrete besparelser til familier i Midtjylland."
 slug: "forsikring"
 cover:
   image: "/images/forsikring-featured-hus-bil-paraply-kroner-2026.webp"
@@ -20,14 +20,11 @@ De fleste danske familier betaler stadig for meget for hus-, bil- og indboforsik
 I Midtjylland er forskellen ofte endnu større.
 
 ## Sådan får du 3 tilbud på 2 minutter
-Jeg anbefaler to programmer jeg er godkendt til:
+Det bedste jeg har fundet er to programmer der virker rigtig godt:
 
-- **Cover Forsikring**  
-- **Findforsikring.dk**
+[Få 3 gratis tilbud]({{ .Site.Data.affiliate_links.cover_forsikring }})
 
-[Få 3 gratis tilbud fra Cover Forsikring]({{ .Site.Data.affiliate_links.cover_forsikring }})
-
-[Få 3 gratis tilbud fra Findforsikring.dk]({{ .Site.Data.affiliate_links.findforsikring }})
+[Få 3 gratis tilbud]({{ .Site.Data.affiliate_links.findforsikring }})
 
 Du udfylder bare én formular og får tilbud fra flere selskaber. De fleste sparer 2.200–4.800 kr om året.
 

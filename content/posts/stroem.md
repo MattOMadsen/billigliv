@@ -3,7 +3,8 @@ title: "Strøm 2026: Spar 3.500 kr på elregningen – Bedste aftaler, sparepær
 date: 2026-02-20T15:00:00+01:00
 description: "Realistisk guide til billigere strøm i 2026. Sammenligning af elpriser, bedste leverandører, LED-pærer, varmepumper og solceller - med konkrete besparelser til familier i Midtjylland."
 slug: "stroem"
-cover: "/images/stroem-featured-sparepaere-vindmoeller-2026.webp"
+cover:
+  image: "/images/stroem-featured-sparepaere-vindmoeller-2026.webp"
 url: "/stroem/"
 draft: false
 tags: ["strom", "elregning", "sparetips", "varmepumpe", "solceller", "2026", "midtjylland"]

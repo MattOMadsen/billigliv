@@ -1,0 +1,57 @@
+baseURL = "https://billigliv.dk/"
+languageCode = "da-dk"
+title = "BilligLiv.dk – Spar 8.000 kr om året"
+theme = "PaperMod"
+
+[permalinks]
+  posts = "/:slug/"
+
+[params]
+  description = "Ærlige sparetips 2026 til almindelige danske familier. Opsparing, madplan, forsikring, strøm og abonnementer."
+  author = "Mattie Danmark"
+  defaultTheme = "light"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowToc = true
+  homeInfoParams = { Title = "Spar penge – hver eneste måned", Content = "Velkommen til BilligLiv.dk. Praktiske tips der virker i virkeligheden – ingen pis." }
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+# Menu med unikke ID'er (fikser ambiguity-fejlen permanent)
+[[menu.main]]
+  identifier = "nav-forside"
+  name = "Forside"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "nav-opsparing"
+  name = "Opsparing"
+  url = "/opsparing/"
+  weight = 2
+
+[[menu.main]]
+  identifier = "nav-madplan"
+  name = "Madplan"
+  url = "/madplan/"
+  weight = 3
+
+[[menu.main]]
+  identifier = "nav-forsikring"
+  name = "Forsikring"
+  url = "/forsikring/"
+  weight = 4
+
+[[menu.main]]
+  identifier = "nav-stroem"
+  name = "Strøm"
+  url = "/stroem/"
+  weight = 5
+
+[[menu.main]]
+  identifier = "nav-abonnementer"
+  name = "Abonnementer"
+  url = "/abonnementer/"
+  weight = 6

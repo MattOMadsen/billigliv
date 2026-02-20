@@ -40,6 +40,6 @@ De fleste jeg har hjulpet sparer mellem 2.200 og 4.800 kr om året.
 2. Sammenlign altid inklusive selvrisiko – ikke kun prisen.
 3. Tjek priser hvert år i januar – det kan ændre sig overraskende meget.
 
-Det koster ikke en krone at få tilbuddene, og du bestemmer selv, om du vil skifte eller ej.
+{{< affiliate-disclaimer >}}
 
 *Sidst opdateret 20. februar 2026*

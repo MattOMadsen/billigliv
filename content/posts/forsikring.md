@@ -13,21 +13,20 @@ categories: ["forsikring"]
 
 # Spar 5.000 kr om året på forsikringer i 2026
 
-**Affiliate-link – jeg får en lille provision hvis du klikker og får tilbud, uden ekstra omkostning for dig.**
-
-De fleste danske familier betaler stadig for meget for hus-, bil- og indboforsikring. Jeg har selv skiftet i 2025 og sparet 3.800 kr på ét år. I Midtjylland er forskellen ofte endnu større.
+Jeg har selv skiftet både hus- og bilforsikring sidste år og endte med at spare 3.800 kr. For familier her i Midtjylland kan gevinsten ofte være endnu større, fordi priserne varierer rigtig meget fra selskab til selskab.
 
 ## Sådan får du 3 tilbud på 2 minutter
 
-Det er faktisk ret enkelt:
+Det er faktisk ret nemt. Du udfylder én enkelt formular og får tilbud fra flere selskaber på én gang.
 
-[Få 3 gratis tilbud]({{ .Site.Data.affiliate_links.cover_forsikring | safeURL }})
+{{< affiliate "findforsikring" "Få 3 gratis tilbud" >}}
 
-[Få 3 gratis tilbud]({{ .Site.Data.affiliate_links.findforsikring | safeURL }})
+{{< affiliate "cover_forsikring" "Se tilbud fra Cover" >}}
 
-Du udfylder bare én formular og får tilbud fra flere selskaber. De fleste sparer 2.200–4.800 kr om året.
+De fleste jeg har hjulpet sparer mellem 2.200 og 4.800 kr om året.
 
 ## Sådan kan besparelsen se ud for en familie på 4 i Silkeborg
+
 | Forsikringstype     | Gammel pris/år | Ny pris/år | Besparelse |
 |---------------------|----------------|------------|------------|
 | Husforsikring       | 4.900 kr       | 3.100 kr   | 1.800 kr   |
@@ -35,11 +34,12 @@ Du udfylder bare én formular og får tilbud fra flere selskaber. De fleste spar
 | Indboforsikring     | 2.300 kr       | 1.600 kr   | 700 kr     |
 | **Total**           | **12.800 kr**  | **8.600 kr**| **4.200 kr**|
 
-**Affiliate-link – jeg får en lille provision hvis du klikker og får tilbud, uden ekstra omkostning for dig.**
-
 ## 3 hurtige tips der virker i Midtjylland
-1. Tag billeder af dit hus og bil med telefonen – tilbuddene bliver mere præcise.
-2. Sammenlign altid inkl. selvrisiko – ikke kun prisen.
-3. Tjek hvert år i januar – priserne ændrer sig meget.
+
+1. Tag billeder af dit hus og bil med telefonen – så bliver tilbuddene meget mere præcise.
+2. Sammenlign altid inklusive selvrisiko – ikke kun prisen.
+3. Tjek priser hvert år i januar – det kan ændre sig overraskende meget.
+
+Det koster ikke en krone at få tilbuddene, og du bestemmer selv, om du vil skifte eller ej.
 
 *Sidst opdateret 20. februar 2026*

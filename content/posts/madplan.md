@@ -3,7 +3,8 @@ title: "Madplan 2026: Spar 10.000 kr på mad til en familie på 4 – Rema, Nett
 date: 2026-02-20T13:00:00+01:00
 description: "Ugentlig madplan der virker i virkeligheden. Spar tusindvis på madbudgettet med danske supermarkeder, billige opskrifter og realistiske indkøbslister til Midtjylland i 2026."
 slug: "madplan"
-cover: "/images/madplan-featured-indkobs-kurv-danske-varer-2026.webp"
+cover:
+  image: "/images/madplan-featured-indkobs-kurv-danske-varer-2026.webp"
 url: "/madplan/"
 draft: false
 tags: ["madplan", "sparetips", "billig mad", "rema", "netto", "familiebudget", "2026"]

@@ -1,9 +1,9 @@
-name: Auto Generate BilligLiv Artikel
+name: Auto Generate BilligLiv Artikel (Improved v3.2)
 
 on:
   schedule:
-    - cron: '0 8 * * 1,4'   # Mandag + torsdag kl. 9:00 dansk tid (8:00 UTC)
-  workflow_dispatch:        # Kan køres manuelt til test
+    - cron: '0 8 * * 1,4'  # Mandag + torsdag kl. 9:00 DK
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -25,52 +25,41 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install xmltodict requests
+        run: pip install xmltodict requests openai pillow
 
-      - name: Hent nyeste godkendte programmer fra Partner-Ads (stærk retry)
+      - name: Hent XML med stærk retry & logging
         run: |
-          echo "Forsøger at hente XML fra Partner-Ads..."
+          echo \"Henter Partner-Ads XML...\"
           rm -f programs.xml
-          
           for i in {1..8}; do
-            curl -s -o programs.xml "https://www.partner-ads.com/dk/programoversigt_xml.php?key=${{ secrets.PARTNER_ADS_KEY }}&godkendte=1"
-            
-            if [ -s programs.xml ] && grep -q "<?xml" programs.xml; then
-              echo "✅ XML hentet succesfuldt på forsøg $i"
+            curl -s -o programs.xml \"https://www.partner-ads.com/dk/programoversigt_xml.php?key=${{ secrets.PARTNER_ADS_KEY }}&godkendte=1\"
+            size=$(wc -c < programs.xml)
+            echo \"Forsøg $i: Størrelse $size bytes\"
+            if [ $size -gt 1000 ] && grep -q \"<?xml\" programs.xml; then
+              echo \"✅ Succes!\"
+              head -300 programs.xml >> logs.xml
               break
-            elif grep -q "Data should not be retrieved so frequently" programs.xml; then
-              echo "Rate limit på forsøg $i - venter 75 sekunder..."
-              sleep 75
-            else
-              echo "Ukendt fejl på forsøg $i - venter 45 sekunder..."
-              sleep 45
             fi
+            sleep $(( 75 * i ))
           done
-
-          # Sidste sikkerhedstjek
-          if [ ! -s programs.xml ] || ! grep -q "<?xml" programs.xml; then
-            echo "FEJL: Kunne ikke hente XML efter 8 forsøg"
-            cat programs.xml
+          if [ ! -s programs.xml ]; then
+            echo \"FEJL: XML tom\"
             exit 1
           fi
 
-          echo "XML størrelse: $(wc -c < programs.xml) bytes"
-          head -c 300 programs.xml | cat
-
-      - name: Generér artikel + billeder + PR
+      - name: Generér artikel + billeder
         env:
           GROK_API_KEY: ${{ secrets.GROK_API_KEY }}
         run: python .github/scripts/generate-article.py
 
-      - name: Opret Pull Request
+      - name: Opret PR
         uses: peter-evans/create-pull-request@v6
         with:
-          commit-message: "Auto: Ny artikel genereret ${{ env.TODAY }}"
-          title: "Auto: ${{ env.TOPIC }} 2026 – ny spareartikel"
+          commit-message: \"Auto: Ny artikel ${{ env.TODAY }}\"
+          title: \"Auto: ${{ env.TOPIC }} 2026\"
           body: |
-            Ny artikel genereret automatisk.
-            Emne: ${{ env.TOPIC }}
-            Programmer: ${{ env.SELECTED_PROGRAMS }}
-            Merge med ét klik når du har tjekket billederne (Grok Imagine prompts er i filen).
-          branch: auto-article-${{ env.TODAY }}
+            Ny artikel.
+            Programmer: ${{ env.PROGRAMS }}
+            Billeder: Grok Imagine.
+          branch: auto-${{ env.TODAY }}
           delete-branch: true

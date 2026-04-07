@@ -1,12 +1,4 @@
-{{- $key := .Get 0 -}}
-{{- $text := .Get 1 -}}
-{{- $url := index .Site.Data.affiliate_links $key -}}
-{{- if $url -}}
-<p class="affiliate-link-block">
-  <a href="{{ $url | safeURL }}" target="_blank" rel="sponsored noopener nofollow" class="affiliate-link">
-    {{ $text }}
-  </a>
-</p>
-{{- else -}}
-[Link ikke fundet: {{ $key }}]
-{{- end -}}
+{{ $key := .Get 0 }}
+{{ $text := .Get 1 | default $key }}
+{{ $link := index $.Site.Data.affiliate_links $key }}
+<a href=\"{{ $link.url }}\" target=\"_blank\" rel=\"nofollow sponsored\">{{ $text }}</a>

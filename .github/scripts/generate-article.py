@@ -2,54 +2,61 @@ import os
 import xmltodict
 import requests
 from datetime import datetime
+from openai import OpenAI
 import re
 
 today = datetime.now().strftime('%Y-%m-%d')
 grok_key = os.getenv('GROK_API_KEY')
 
-print("=== Starter BilligLiv auto-artikel generation ===")
+client = OpenAI(base_url="https://api.x.ai/v1", api_key=grok_key)
+
+print("=== BilligLiv Auto-Artikel v3.2 ===")
 print(f"Dato: {today}")
 
-if not grok_key:
-    print("FEJL: GROK_API_KEY secret mangler!")
-    exit(1)
+# XML parse (fra workflow)
+with open('programs.xml', 'r', encoding='iso-8859-1') as f:
+    data = xmltodict.parse(f.read())['partnerprogrammer']['program']
 
-# Tjek XML-fil
-xml_path = 'programs.xml'
-if not os.path.exists(xml_path):
-    print("FEJL: programs.xml findes ikke!")
-    exit(1)
+programs = data if isinstance(data, list) else [data]
+print(f"Programmer: {len(programs)}")
 
-size = os.path.getsize(xml_path)
-print(f"XML-fil størrelse: {size} bytes")
+# Vælg top 3
+top_programs = programs[:3]
+topics = [p['navn'] for p in top_programs]
 
-with open(xml_path, 'r', encoding='iso-8859-1') as f:
-    raw = f.read()
-    print("=== FØRSTE 1000 TEGN AF programs.xml ===")
-    print(raw[:1000])
-    print("=== SLUT PÅ DEBUG ===")
+system_prompt = """
+Du er BilligLivs AI-skribent. Skriv på naturligt dansk som nabo fra Viborg.
 
-if size == 0 or not raw.strip():
-    print("FEJL: XML-filen er tom!")
-    exit(1)
+Struktur:
+- Titel
+- Intro med personlig historie
+- Hvor meget sparer?
+- Trin-for-trin
+- Tabel
+- 5-7 hacks
+- FAQ
+- Konklusion + CTA
 
-if not raw.strip().startswith('<?xml') and not raw.strip().startswith('<'):
-    print("FEJL: Dette er ikke XML – sandsynligvis fejlside fra Partner-Ads!")
-    exit(1)
+Brug affiliate shortcodes: {{< affiliate \"key\" \"tekst\" >}}
+Ingen salg, humor ok.
+"""
 
-# Parse nu
-try:
-    data = xmltodict.parse(raw)['partnerprogrammer']['program']
-    print(f"✅ Hentet {len(data) if isinstance(data, list) else 1} programmer")
-except Exception as e:
-    print("Parse-fejl:", str(e))
-    exit(1)
+for topic in topics:
+    response = client.chat.completions.create(
+        model="grok-beta",
+        messages=[{"role": "system", "content": system_prompt}, {"role": "user", "content": f"Skriv artikel om {topic} 2026."}]
+    )
+    article = response.choices[0].message.content
 
-# Resten af scriptet (Grok-kald, artikel-generering osv.)
-system_prompt = """Du er BilligLivs AI-skribent. Skriv ALTID i naturlig, venlig Midtjylland-tone som om vi snakker over kaffen i Viborg..."""  # (samme som før)
+    # Gem
+    filename = f"content/{topic.lower().replace(' ', '-')}/index.md"
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
+    with open(filename, 'w') as f:
+        f.write(f"---\ntitle: \"{topic} 2026\"\ndate: {today}\n---\n\n{article}")
 
-# ... (resten af koden er uændret fra sidst – Grok-kald, gem fil osv.)
+    # Billede prompt
+    image_prompt = f"Viborg hus {topic} besparelse 2026, realistisk foto"
+    # (Grok Imagine call – udvid senere)
 
-# (Hvis du vil have hele scriptet samlet, sig "send hele py" – men debug-delen er det vigtigste nu)
+print("Artikler genereret – PR klar!")
 
-print("✅ Debug færdig – kører videre til Grok")
